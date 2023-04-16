@@ -1,0 +1,67 @@
+* { margin: 0; padding: 0; }
+#main{
+    height:100%;
+    width:60%;
+    margin: auto;
+}
+#leftbox {
+    float:left;
+    background:rgba(2, 125, 167, 0.842);
+    width:22%;
+    height:100%;
+    padding-top: 330px;
+    padding-left: 3%;
+}
+#rightbox{
+    float:right;
+    background:whitesmoke;
+    width:75%;
+    height:100%;
+    padding-top: 330px;
+}
+#name {
+    float:left;
+    line-height:0px;
+    font-size: 40px;
+}
+
+#upperbox{
+    width: 50%;
+    height: 200px;            
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    background: lightblue;
+}
+#name{
+    padding-left: 80px;
+}
+
+#education{
+    border-spacing: 30px;
+    color: white;
+}
+#career{
+    border-spacing: 30px;
+}
+#job-title{
+    text-align: right;
+}
+
+h1{
+    color:black;
+    text-align:center;
+}
+h2,h4{
+    color:white;
+    
+}
+#skills{
+    list-style-type:disc;
+}
+#skills li{
+    display: inline;
+
+
+}
+
