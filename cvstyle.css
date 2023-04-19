@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(75, 72, 72);
+}
+
+#maindiv{
+    height: 950px;
+    width: 700px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+
+}
+
+#leftdiv{
+    height: 950px;
+    width: 30%;
+    background-color: silver;
+
+}
+
+#picdiv{
+    height: 200px;
+    margin-top: 50px;
+}
+
+#myimage{
+    height: 200px;
+}
+
+#rightdiv{
+    height: 950px;
+    width: 70%;
+    background-color: white;
+}
+
+#nameprofessionaltitlediv{
+    height: 120px;
+    background-color: rgb(85, 85, 188);
+    margin-top: 70px;
+    padding-top: 30px;
+    text-align: center;
+    color: aliceblue;
+}
+
+#nameprodiv{
+    width:60% ;
+    margin: auto;
+    text-align: center;
+}
+
+#workexperiencetable{
+    border-collapse: collapse;
+
+}
+
+/* .progressbar{
+    background-color: silver;
+}
+.progress{
+    width: 25%;
+    background-color: green;
+} */
+
+#leftmid{
+height: 350px;
+margin-top:  30px ;
+/* background-color: red; */
+margin-left: 30px;
+margin-right: 5px;
+}
+
+#leftbot{
+    height: 230px;
+    margin-top: 45px;
+    /* background-color: blue; */
+    margin-left: 30px;
+    margin-right: 20px;
+
+
+}
+
+#rightmaindiv{
+    height: 950px;
+    margin-left: 10px;
+
+}
+
+#contacttable{
+    align-items: left;
+    text-align: left;
+    border-spacing: 0cap;
+}
+
+
+/* td{
+    border: 3px solid black;
+    padding: 0%;
+    height: 10px;
+} */
+
+
+.aboutmeworkexperience{
+    margin-right: 10px;
+    text-align: justify;
+}
+
+.workexptd{
+    width: 85px;
+}
+
+table{
+    border-spacing: 0px;
+}
