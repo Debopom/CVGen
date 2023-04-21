@@ -80,11 +80,11 @@ $rs_honor = $conn-> query($sql_honor);
         
         <div class="clear"></div>
         
-        <dl style="width: 600px;">
+        <dl style="width: 770px;">
             <dd class="clear"></dd>
             
             <dt>Education</dt>
-            <dd style="width: 400px;"> <?php
+            <dd style="width: 580px;"> <?php
             while($data = mysqli_fetch_array($rs)){?>
                 <h2><?php echo $data['einstitute'] ; ?></h2>
                 <p><strong>Major/Level:</strong> <?php echo $data['elevel'] ; ?><br />
@@ -99,7 +99,7 @@ $rs_honor = $conn-> query($sql_honor);
             <dd class="clear"></dd>
             
             <dt>Skills</dt>
-            <dd style="width: 400px;">
+            <dd style="width: 580px;">
             <ul id="skills">
             <?php
             while($data = mysqli_fetch_array($rs_skill)){?>
@@ -113,7 +113,7 @@ $rs_honor = $conn-> query($sql_honor);
             <dd class="clear"></dd>
             
             <dt>Experience</dt>
-            <dd style="width: 400px;">
+            <dd style="width: 580px;">
             <?php
             while($data = mysqli_fetch_array($rs_exp)){?>
                 <h2><?php echo $data['exdesignation'] ; ?><span> <?php echo $data['excompany'] ; ?>, <?php echo $data['exstart'] ; ?>-<?php echo $data['exend'] ; ?></span></h2>
@@ -131,7 +131,7 @@ $rs_honor = $conn-> query($sql_honor);
             <dd class="clear"></dd>
             
             <dt>Honors and Rewards</dt>
-            <dd style="width: 400px;">
+            <dd style="width: 580px;">
             <?php while($data = mysqli_fetch_array($rs_honor)){?>
             <h2><strong><?php echo $data['hposition'] ; ?></strong></h2>
             <p><?php echo $data['hname'] ; ?> <?php echo $data['hplace'] ; ?><br />
@@ -143,7 +143,7 @@ $rs_honor = $conn-> query($sql_honor);
             <!-- <dd class="clear"></dd>
             
             <dt>References</dt>
-            <dd style="width: 400px;">Available on request</dd>
+            <dd style="width: 580px;">Available on request</dd>
             
             <dd class="clear"></dd> -->
         </dl>
@@ -151,7 +151,6 @@ $rs_honor = $conn-> query($sql_honor);
         <div class="clear"></div>
     
     </div>
-    <iframe id="iframe" style="width : 100% ; border:0;height:0" src="template2.php" frameborder="0"></iframe>
     
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
