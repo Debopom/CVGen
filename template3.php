@@ -47,6 +47,7 @@ $rs_honor = $conn-> query($sql_honor);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cvstyle.css">
+    <link rel="stylesheet" href="background.css">
     
     <title>Document</title>
 
@@ -126,13 +127,14 @@ $rs_honor = $conn-> query($sql_honor);
                 <?php
                 while($data = mysqli_fetch_array($rs_exp)){?>
                     <tr>
-                        <td class="workexptd"><?php echo $data['exstart'] ; ?>-<?php echo $data['exend'] ; ?></td> <td><h5><?php echo $data['exdesignation'] ; ?></h5></td>
+                        <td rowspan = "3" class="workexptd"><?php echo $data['exstart'] ; ?>-<?php echo $data['exend'] ; ?></td> 
+                        <td><strong><?php echo $data['exdesignation'] ; ?></strong></td>
                     </tr>
                     <tr>
-                        <td></td> <td><h5><?php echo $data['excompany'] ; ?></h5></td>
+                         <td><strong><?php echo $data['excompany'] ; ?></strong></td>
                     </tr>
                     <tr>
-                        <td></td> <td><p class="aboutmeworkexperience">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel labore omnis repellat placeat id, possimus minima sit dolores pariatur modi distinctio eum voluptatem dolore quam aliquid facere asperiores illum autem?</p> </td>
+                        <td><p class="aboutmeworkexperience">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel labore omnis repellat placeat id, possimus minima sit dolores pariatur modi distinctio eum voluptatem dolore quam aliquid facere asperiores illum autem?</p> </td>
                     </tr>
                     <?php
                  }

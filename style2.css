@@ -6,11 +6,13 @@ body { font: 16px Helvetica, Sans-Serif;
 
 #page-wrap { width: 780px !important; 
     margin: 40px auto 60px; 
-    padding-top: 40px ;}
+    padding-top: 40px ;
+    padding-left: 10px;
+    background-color: white;}
         
 #pic { 
     float: right; 
-    padding-top: 15px; 
+
     padding-right: 30px;
     height: 150px;
     width: 150px;

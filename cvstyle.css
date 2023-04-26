@@ -5,21 +5,25 @@ body{
 #maindiv{
     height: 100%;
     width: 850px;
+    
     background-color: white;
     margin: auto;
     display: flex;
+    overflow: hidden;
 
 }
 
 #leftdiv{
     height: 100%;
-    width: 30%;
+    width: 28%;
     background-color: silver;
+    padding-left: 10px;
+    
 
 }
 
 #picdiv{
-    height: 200px;
+    height: 30%;
     margin-top: 50px;
     margin-left: 20px;
 }
@@ -32,6 +36,7 @@ body{
     height: 100%;
     width: 70%;
     background-color: white;
+    padding-left: 10px;
 }
 
 #nameprofessionaltitlediv{
@@ -49,69 +54,13 @@ body{
     text-align: center;
 }
 
-#workexperiencetable{
-    border-collapse: collapse;
-
-}
-
-/* .progressbar{
-    background-color: silver;
-}
-.progress{
-    width: 25%;
-    background-color: green;
-} */
-
-#leftmid{
-height: 350px;
-margin-top:  30px ;
-/* background-color: red; */
-margin-left: 30px;
-margin-right: 5px;
-}
-
-#leftbot{
-    height: 230px;
-    margin-top: 45px;
-    /* background-color: blue; */
-    margin-left: 30px;
-    margin-right: 20px;
-
-
-}
-
-#rightmaindiv{
-    height: 950px;
-    margin-left: 10px;
-
-}
-
-#contacttable{
-    align-items: left;
-    text-align: left;
-    border-spacing: 0cap;
-}
-
-
-/* td{
-    border: 3px solid black;
-    padding: 0%;
-    height: 10px;
-} */
 
 
 .aboutmeworkexperience{
-    margin-right: 10px;
+    
     text-align: justify;
 }
 
-.workexptd{
-    width: 85px;
-}
-
-table{
-    border-spacing: 0px;
-}
 #pdfButton{
     background-color: #4CAF50;
     border: none;
@@ -124,6 +73,3 @@ table{
     margin: 4px 2px;
     cursor: pointer;
 }
-ul#skills li {
-    display:inline;
-  }

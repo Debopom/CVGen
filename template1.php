@@ -50,6 +50,7 @@ $rs_honor = $conn-> query($sql_honor);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template</title>
     <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="background.css">
 </head>
 <body>
 <div style = "text-align: center;"><button id="pdfButton" onclick="makepdf()" style = "height: 50px;"><b>Click here to Generate PDF</b></button></div>

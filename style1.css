@@ -6,6 +6,7 @@
     overflow-y: auto;
 }
 
+
 #leftbox {
     float:left;
     background:rgba(2, 125, 167, 0.842);
@@ -19,7 +20,7 @@
 }
 #rightbox{
     float:right;
-    background:whitesmoke;
+    background:rgb(255, 255, 255);
     width:70%;
     height:100%;
     padding-top: 36%;
