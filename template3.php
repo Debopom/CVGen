@@ -1,5 +1,7 @@
 <?php
+session_start();
 require 'dbconnect.php';
+$user_id= $_SESSION['id'];
 $query = "SELECT * FROM form AS f WHERE f.user_id=1";
 $result = $conn->query($query);
 
@@ -14,23 +16,24 @@ $nationality = $row ['nationality'];
 $blood = $row ['blood'];
 $gender = $row ['gender'];
 $obj = $row ['Obj'];
+$image = $row ['file'];
 
-$sql_ed = "SELECT * FROM education WHERE user_id = 1 ";
+$sql_ed = "SELECT * FROM education WHERE user_id = $user_id ";
 
 
 $rs = $conn-> query($sql_ed);
 
-$sql_skills = "SELECT * FROM skill WHERE user_id = 1 ";
+$sql_skills = "SELECT * FROM skill WHERE user_id = $user_id ";
 
 
 $rs_skill = $conn-> query($sql_skills);
 
-$sql_exp= "SELECT * FROM experience WHERE user_id = 1 ";
+$sql_exp= "SELECT * FROM experience WHERE user_id = $user_id ";
 
 
 $rs_exp = $conn-> query($sql_exp);
 
-$sql_honor= "SELECT * FROM honors WHERE user_id = 1 ";
+$sql_honor= "SELECT * FROM honors WHERE user_id = $user_id ";
 
 
 $rs_honor = $conn-> query($sql_honor);
@@ -57,7 +60,7 @@ $rs_honor = $conn-> query($sql_honor);
     <div id="maindiv">
         <div id="leftdiv">
             <div id="picdiv">
-                <img id="myimage" src="images\template_image.jpg" alt="image of a person">
+                <img id="myimage" src=<?php echo $image?>  alt="image of a person">
             </div>
             
             <div id="leftmid">

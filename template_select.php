@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="background.css">
 </head>
 <body>
+        <?php
+        include("header.php");
+        ?>
     <div id = "templates">
 
     
@@ -16,7 +19,8 @@
         <a href="template1.php"><img id= "template_im" src="template_images\Pictorial-CV-template.jpg" alt=""></a>
         <a href="template2.php"><img id= "template_im" src="template_images\image.png" alt=""></a>
         <a href="template3.php"><img id= "template_im" src="template_images\template_ss.JPG" alt=""></a>
-        <a href="template1.php"><img id= "template_im" src="images\template_image.jpg" alt=""></a>
+        <a href="template4.php"><img id= "template_im" src="images\template_image.jpg" alt=""></a>
     </div>
+    <?php include 'footer.php'; ?>
 </body>
 </html>

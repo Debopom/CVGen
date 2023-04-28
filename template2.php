@@ -1,6 +1,8 @@
 
 <?php
+session_start();
 require 'dbconnect.php';
+$user_id= $_SESSION['id'];
 $query = "SELECT * FROM form AS f WHERE f.user_id=1";
 $result = $conn->query($query);
 
@@ -15,23 +17,24 @@ $nationality = $row ['nationality'];
 $blood = $row ['blood'];
 $gender = $row ['gender'];
 $obj = $row ['Obj'];
+$image = $row ['file'];
 
-$sql_ed = "SELECT * FROM education WHERE user_id = 1 ";
+$sql_ed = "SELECT * FROM education WHERE user_id = $user_id ";
 
 
 $rs = $conn-> query($sql_ed);
 
-$sql_skills = "SELECT * FROM skill WHERE user_id = 1 ";
+$sql_skills = "SELECT * FROM skill WHERE user_id = $user_id ";
 
 
 $rs_skill = $conn-> query($sql_skills);
 
-$sql_exp= "SELECT * FROM experience WHERE user_id = 1 ";
+$sql_exp= "SELECT * FROM experience WHERE user_id = $user_id ";
 
 
 $rs_exp = $conn-> query($sql_exp);
 
-$sql_honor= "SELECT * FROM honors WHERE user_id = 1 ";
+$sql_honor= "SELECT * FROM honors WHERE user_id = $user_id ";
 
 
 $rs_honor = $conn-> query($sql_honor);
@@ -59,7 +62,7 @@ $rs_honor = $conn-> query($sql_honor);
 <div style = "text-align: center;"><button id="pdfButton" onclick="makepdf()" style = "height: 50px;"><b>Click here to Generate PDF</b></button></div>
     <div id="page-wrap" style="width: 600px;">
     
-        <img src="images\template_image.jpg"style="padding-top: 30px;" id="pic" />
+        <img src=<?php echo $image?> style="padding-top: 30px;" id="pic" />
     
         <div id="contact-info" class="vcard" style="padding-top: 30px;">
         

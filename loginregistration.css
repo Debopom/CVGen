@@ -1,0 +1,88 @@
+#login {
+    height: fit-content;
+    width: 700px;
+    background: linear-gradient(to top, rgba(192, 192, 192, 0.9)50%, rgba(192, 192, 192, 0.9)50%);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 200px;
+    padding-top: 50px;
+}
+
+#registration {
+    height: fit-content;
+    width: 700px;
+    background: linear-gradient(to top, rgba(192, 192, 192, 0.9)50%, rgba(192, 192, 192, 0.9)50%);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 150px;
+    padding-top: 50px;
+}
+
+#logintable {
+    margin: auto;
+    padding-top: 40px;
+}
+
+input {
+    height: 30px;
+    border-radius: 4px;
+    width: 300px;
+}
+
+button {
+    background-color: rgb(1, 255, 175);
+    color: rgb(10, 10, 10);
+    border-style: solid;
+    border-color: black;
+    width: 200px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+th {
+    font-weight: bold;
+}
+
+/* #loginheader{
+    margin-left: 320px;
+    padding-top: 50px;
+} */
+
+
+
+#logindiv {
+    height: 60px;
+    text-align: center;
+    border: 3px solid black;
+    width: 200px;
+    margin: auto;
+
+    padding-top: 0%;
+
+}
+
+#regdiv {
+    height: 60px;
+    text-align: center;
+    border: 3px solid black;
+    width: 250px;
+    margin: auto;
+    padding-top: 0%;
+
+}
+
+
+:root {
+    --background-green: #82E0AA 40%;
+    --light-blue: rgb(172, 221, 248);
+    --teal: rgba(65, 211, 218, 0.729);
+    --light-green: #ABEBC6;
+}
+
+body {
+    padding: auto;
+    background: linear-gradient(160deg, #82E0AA 40%, #fff 0);
+    background-repeat: no-repeat;
+}
