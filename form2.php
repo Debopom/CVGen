@@ -48,7 +48,8 @@ $rs_honor = $conn->query($sql_honor);
                 <?php
                 while ($data = mysqli_fetch_array($rs_skill)) { ?>
                     <br>
-                    <li style="display:list-item"><?php echo $data['sname']; ?> <a href="delete.php" class="dlt">Delete</a></li>
+                    <li style="display:list-item"><?php echo $data['sname']; ?> 
+                    <a href="delete.php?table=skill&column=skill_id&id=<?php echo $data['skill_id']; ?> " class="dlt">Delete</a></li>
 
                 <?php
                 }
@@ -69,7 +70,7 @@ $rs_honor = $conn->query($sql_honor);
                 <h2>Added Educational Qualifications</h2>
                 <?php
                 while ($data = mysqli_fetch_array($rs)) { ?>
-                    <p><a href="delete.php" class="dlt">Delete</a>
+                    <p><a href="delete.php?table=education&column=edu_id&id=<?php echo $data['edu_id']; ?> " class="dlt">Delete</a></li>
                         <strong>Institution:</strong> <?php echo $data['einstitute']; ?><br />
                         <strong>Major/Level:</strong> <?php echo $data['elevel']; ?><br />
                         <strong>Result:</strong> <?php echo $data['eresult']; ?><br />
@@ -99,7 +100,7 @@ $rs_honor = $conn->query($sql_honor);
                 <h2>Added Experiences</h2>
                 <?php
                 while ($data = mysqli_fetch_array($rs_exp)) { ?>
-                    <p><a href="delete.php" class="dlt">Delete</a>
+                    <p><a href="delete.php?table=experience&column=exp_id&id=<?php echo $data['exp_id']; ?> " class="dlt">Delete</a>
                         <strong>Designation:</strong> <?php echo $data['exdesignation']; ?><br />
                         <strong>Company name:</strong> <?php echo $data['excompany']; ?><br />
                         <strong>Starting Date:</strong> <?php echo $data['exstart']; ?><br />
@@ -132,8 +133,7 @@ $rs_honor = $conn->query($sql_honor);
 
                 <h1>Added Honors & Awards</h1>
                 <?php while ($data = mysqli_fetch_array($rs_honor)) { ?>
-                    <!-- <p><a href="delete.php?dlt='.$data['user_id'].'" class="dlt">Delete</a> -->
-                    <p><a href="delete.php" class="dlt">Delete</a>
+                    <p><a href="delete.php?table=honors&column=honor_id&id=<?php echo $data['honor_id']; ?> " class="dlt">Delete</a>
                         <li><strong>Honors & Awards name:</strong> <?php echo $data['hname']; ?><br />
                             <strong>Institution name:</strong> <?php echo $data['hplace']; ?><br />
                             <strong>Position:</strong> <?php echo $data['hposition']; ?><br />

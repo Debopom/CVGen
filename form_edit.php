@@ -1,6 +1,6 @@
 <?php
 require 'dbconnect.php';
-$query = "SELECT * FROM form AS f WHERE f.user_id=1";
+$query = "SELECT * FROM form AS f WHERE f.user_id=$user_id";
 $result = $conn->query($query);
 
 

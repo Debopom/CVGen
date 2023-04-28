@@ -17,9 +17,15 @@ if(isset($_POST["submit"])){
   else{
     if($password == $confirmpassword){
       $query = "INSERT INTO `users` (`fname`, `lname`, `email`, `password`) VALUES ('$fname', '$lname', '$email', '$password');";
-      mysqli_query($conn, $query);
-      echo
-      "<script> alert('Registration Successful'); </script>";
+      $rs = $conn->query($query);
+      if($rs){
+        echo"<script> alert('Registration Successful'); </script>";
+        echo '<script>location.replace("login.php")</script>';
+      }
+      else{
+        echo"<script> alert('Registration Error. Please try again'); </script>";
+      }
+      
     }
     else{
       echo
@@ -44,7 +50,7 @@ if(isset($_POST["submit"])){
 
       
 
-<form class="" action="new_user_dash.php" method="post" autocomplete="off">
+<form class="" action="" method="post" autocomplete="off">
   <tr>
     <td><label for="fname">First Name : </label></td>
     <td><input type="text" name="fname" id = "fname" required value="">  <br></td>
