@@ -137,7 +137,7 @@ $rs_honor = $conn-> query($sql_honor);
                          <td><strong><?php echo $data['excompany'] ; ?></strong></td>
                     </tr>
                     <tr>
-                        <td><p class="aboutmeworkexperience">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel labore omnis repellat placeat id, possimus minima sit dolores pariatur modi distinctio eum voluptatem dolore quam aliquid facere asperiores illum autem?</p> </td>
+                        <td><p class="aboutmeworkexperience"></h4><?php echo $data['description'] ; ?></p> </td>
                     </tr>
                     <?php
                  }

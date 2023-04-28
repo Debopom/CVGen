@@ -105,6 +105,7 @@ $rs_honor = $conn->query($sql_honor);
                         <strong>Company name:</strong> <?php echo $data['excompany']; ?><br />
                         <strong>Starting Date:</strong> <?php echo $data['exstart']; ?><br />
                         <strong>Ending Date:</strong> <?php echo $data['exend']; ?><br />
+                        <strong>Job description:</strong> <?php echo $data['description']; ?><br />
                     </p>
                     <!-- <ul>
                         <li>locale_get_primary_language</li>
@@ -121,6 +122,7 @@ $rs_honor = $conn->query($sql_honor);
                 <label for="exstart">Starting Date</label>
                 <input type="date" placeholder="Starting Date" name="exstart">
                 <input type="text" placeholder="Ending Date" name="exend">
+                <input type="text" placeholder="Write your job description in short" name="descrip">
 
                 <a href="form2.php"><button type="submit" name="submit4" class="btn">Done</button></a>
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>

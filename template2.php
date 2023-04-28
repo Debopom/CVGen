@@ -121,11 +121,7 @@ $rs_honor = $conn-> query($sql_honor);
             <?php
             while($data = mysqli_fetch_array($rs_exp)){?>
                 <h2><?php echo $data['exdesignation'] ; ?><span> <?php echo $data['excompany'] ; ?>, <?php echo $data['exstart'] ; ?>-<?php echo $data['exend'] ; ?></span></h2>
-                <ul>
-                    <li>locale_get_primary_language</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt ullam perspiciatis sequi doloremque eos soluta dicta tempora possimus maxime eius adipisci repellendus, velit laboriosam illum cum, sed labore. Excepturi?</li>
-                    <li>Provided untimely deaths to all who opposed</li>
-                </ul>
+                <br><?php echo $data['description'] ; ?>
             <?php
             }
             ?>                

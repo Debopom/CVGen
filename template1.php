@@ -104,8 +104,8 @@ $rs_honor = $conn-> query($sql_honor);
             <table id="career">
                 <?php while($data = mysqli_fetch_array($rs_exp)){?>
                     <tr>
-                        <td id="job-title">Job-1 <br> <?php echo $data['exstart'] ; ?> - <br> <?php echo $data['exend'] ; ?></td>
-                        <td><h3><?php echo $data['excompany'] ; ?></h3><h4><?php echo $data['exdesignation'] ; ?></h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis atque ipsam earum sit deserunt quo, officia laborum fugiat fuga voluptatibus labore. Autem facilis odio sequi inventore. Fuga, itaque omnis!</td>
+                        <td id="job-title"> <br> <?php echo $data['exstart'] ; ?> - <br> <?php echo $data['exend'] ; ?></td>
+                        <td><h3><?php echo $data['excompany'] ; ?></h3><h4><?php echo $data['exdesignation'] ; ?></h4><?php echo $data['description'] ; ?></td>
                     </tr>
                     <?php
                 }?>

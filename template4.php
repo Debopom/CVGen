@@ -108,12 +108,16 @@ $rs_honor = $conn-> query($sql_honor);
                 <div class="education">
                     <h1 id="head"> EDUCATION</h1>
                     
-                    <div id="exp_align">
-                        <h3>Role  </h3>
-                        <p> Company name </p>
-                        <p class="time"> 2020- present</p>
-
-                    </div>
+                    
+                            <?php
+                        while($data = mysqli_fetch_array($rs)){?>
+                        <h4><?php echo $data['elevel'] ; ?></h4>
+                        <p><strong>Institution:</strong> <?php echo $data['einstitute'] ; ?><br>
+                        <strong>Result:</strong> <?php echo $data['eresult'] ; ?><br>
+                        <strong>passing Year:</strong> <?php echo $data['epassyear'] ; ?><br></p>
+                        <?php
+                        }
+                        ?>
                 </div>
 
 
@@ -122,25 +126,28 @@ $rs_honor = $conn-> query($sql_honor);
             <div class="right"> 
                 <div class="profile">
                 <h1 id="head"> PROFILE</h1>
-                <p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu lectus sit amet lorem dictum cursus id nec mauris. Pellentesque velit nisl, congue non tempor eget, dapibus a urna. Curabitur mi nisl, tempus nec convallis 
-                    
-
-                
-                .
-                </p>
+                <p ><?php echo $obj ?></p>
             </div>
             <div  class="exp">
                 <h1 id="head"> EXPERIENCE</h1>
                     <div id="exp_align">
-                        <h3>Role  </h3>
-                        <p> Company name </p>
-                        <p class="time"> 2020- present</p>
-
+                    <?php
+                        while($data = mysqli_fetch_array($rs_exp)){?>
+                        <h3><?php echo $data['exdesignation'] ; ?></h3>
+                        <p>  <?php echo $data['excompany'] ; ?> </p>
+                        <p class="time"> <?php echo $data['exstart']?>- <?php echo $data['exend'] ; ?></p>
+                        <p class="time"> <?php echo $data['description'] ; ?></p>
+                    <?php
+                        }?>
                     </div>
                 <div id="list">
-                <li>lectus sit amet lorem dictum cursus id nec mauris. Pellentesque </li>
-                <li>lectus sit amet lorem dictum cursus id nec mauris. Pellentesque </li>
-                <li>lectus sit amet lorem dictum cursus id nec mauris. Pellentesque </li>
+                <?php
+                while($data = mysqli_fetch_array($rs_skill)){?>
+                    <li style="display:inline"><?php echo $data['sname'] ; ?></li>
+                <?php
+                }
+                ?>
+            </ul>
             </div>
                 
                 

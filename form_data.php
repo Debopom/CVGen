@@ -24,6 +24,7 @@ if (isset($_POST['Next'])) {
     $gender = $_POST['gender'];
     $cvobj = $_POST['Obj'];
     $file = $_FILES['file']['name'];
+    
 
     $query1 = "INSERT INTO form (user_id , fname, lname, emailad, phnnum, address, 
 nationality, blood, gender, Obj, file) VALUES($user_id,'$fname', '$lname', '$email',
@@ -91,9 +92,9 @@ if (isset($_POST['submit4'])) {
     $exdesignation = $_POST['exdesignation'];
     $exstart = $_POST['exstart'];
     $exend = $_POST['exend'];
-
-    $query4 = "INSERT INTO experience (user_id,excompany, exdesignation, exstart, exend)
-VALUES($user_id,'$excompany', '$exdesignation', '$exstart', '$exend')";
+    $resp = $_POST['descrip'];
+    $query4 = "INSERT INTO experience (user_id,excompany, exdesignation, exstart, exend , description)
+VALUES($user_id,'$excompany', '$exdesignation', '$exstart', '$exend' ,'$resp' )";
 
     if ($conn->query($query4) == TRUE) {
         echo '<script>alert("New record created successfully")</script>';

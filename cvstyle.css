@@ -4,7 +4,7 @@ body{
 
 #maindiv{
     height: 100%;
-    width: 850px;
+    width: 800px;
     
     background-color: white;
     margin: auto;
@@ -30,6 +30,7 @@ body{
 
 #myimage{
     height: 200px;
+    width:200px;
 }
 
 #rightdiv{

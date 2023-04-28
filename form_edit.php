@@ -1,5 +1,7 @@
 <?php
+session_start();
 require 'dbconnect.php';
+$user_id= $_SESSION['id'];
 $query = "SELECT * FROM form AS f WHERE f.user_id=$user_id";
 $result = $conn->query($query);
 
@@ -14,6 +16,7 @@ $nationality = $row['nationality'];
 $blood = $row['blood'];
 $gender = $row['gender'];
 $cvobj = $row['Obj'];
+$image = $row ['file'];
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +46,7 @@ include("header.php");
         <h1>Personal Details</h1>
         <form action="form_data_update.php" method="post" enctype="multipart/form-data">
             <div class="img-div">
-                <img src="image/img_icon.jpg" id="img1">
+                <img src=<?php echo $image?> id="img1">
                 <input type="file" id="file" name="file" value="<?php echo $file ?>">
                 <label for="file" id="uploadBtn">Choose Photo</label>
             </div>
