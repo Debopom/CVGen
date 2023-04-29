@@ -63,7 +63,7 @@ require 'dbconnect.php';
             </form>
         </div>
         <div> <?php
-                include("footer.php");
+                include("footer_about.php");
                 ?>
         </div>
         <script src="form.js"></script>

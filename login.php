@@ -30,6 +30,7 @@ if (isset($_POST["submit"])) {
   <meta charset="utf-8">
   <title>Login</title>
   <link rel="stylesheet" href="loginregistration.css">
+  <link rel="stylesheet" href="background.css">
   <?php
   include("header_login.php");
   ?>

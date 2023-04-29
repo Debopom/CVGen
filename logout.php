@@ -10,8 +10,8 @@
 <style>
     #log {
         float: right;
-        margin-right: 20px;
-
+        margin-right: 30px;
+        margin-top: 40px;
     }
 </style>
 

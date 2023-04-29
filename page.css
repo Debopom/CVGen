@@ -12,7 +12,7 @@ page {
   box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
 }
 page[size="A4"] {  
-  width: 25cm;
+  width: 850px;
   height: 29.7cm; 
 
 }

@@ -3,10 +3,10 @@
   width: 900px;
   /* background-color: rgb(192, 192, 192); */
   background: linear-gradient(to top, rgba(192, 192, 192, 0.9)50%, rgba(192, 192, 192, 0.9)50%);
-  margin-top: 25px;
-  /*4%*/
-  margin-left: 300px;
-  /*20%*/
+  margin-top: 4%;
+  /**/
+  margin-left: 25%;
+  /**/
   border-radius: 10px;
 }
 
@@ -20,7 +20,7 @@ h1 {
   width: 120px;
   position: absolute;
   top: 30%;
-  left: 23%;
+  left: 28%;
   /* transform: translate(-5%, -30%); */
   border-radius: 50%;
   overflow: hidden;

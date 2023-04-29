@@ -82,7 +82,8 @@ $form_query_rs = $conn->query($form_query);
         <?php
         if (mysqli_num_rows($form_query_rs) > 0) {?>
         <h1>You already have created a form. Click here to edit</h1>
-        <a href="form_edit.php"><button> Edit </button></a>
+        <a href="form_edit.php"><button> Edit </button></a> OR
+        <a href="delete_cv.php"><button onclick= "validation()"style = "background-color: red"> Delete CV </button></a>
         <?php } 
         else {?>
         <h1>New in this site? </h1>
@@ -90,8 +91,17 @@ $form_query_rs = $conn->query($form_query);
        <?php }?>
       </div>
     </div>
+    <div id ="pic">
+          <img src="images\12_prev_ui.png" alt="" srcset="">
+    </div>
     <?php include 'footer.php'; ?>
     </div>
+
   </body>
+  <script>
+    function validation(){
+      alert("Are you sure you want to delete the previous CV? You will have to do it again from scratch!");
+    }
+  </script>
 
 </html>

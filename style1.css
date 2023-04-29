@@ -37,9 +37,9 @@
     width: 600px;
     height: 200px;            
     position: absolute;
-    top: 10%;
+    top: 160px;
     
-    margin: 0px 50px 75px 100px;
+    margin: 0px 50px 0px 100px;
     
     background: lightblue;
 }

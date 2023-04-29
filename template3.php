@@ -56,6 +56,9 @@ $rs_honor = $conn-> query($sql_honor);
 
 </head>
 <body>
+<div><?php
+            include("header.php");
+            ?></div>
 <div style = "text-align: center;"><button id="pdfButton" onclick="makepdf()" style = "height: 50px;"><b>Click here to Generate PDF</b></button></div>
     <div id="maindiv">
         <div id="leftdiv">
@@ -163,7 +166,9 @@ $rs_honor = $conn-> query($sql_honor);
         </div>
     </div>
 
-
+    <?php
+            include("template_footer.php");
+            ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     

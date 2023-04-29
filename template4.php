@@ -52,14 +52,18 @@ $rs_honor = $conn-> query($sql_honor);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cv.css">
     <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="background.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <!--Get your own code at fontawesome.com-->
-    <title>Document</title>
+    <title>Template4</title>
 </head>
 <body>
-<div style = "text-align: center;"><button id="pdfButton" onclick="makepdf()" style = "height: 50px;"><b>Click here to Generate PDF</b></button></div>
+<div><?php
+            include("header.php");
+            ?></div>
+<div style = "text-align: center;"><button id="pdfButton" onclick="makepdf()" style = "height: 50px;"><b>Click here to Generate PDF</b></button></div><br><br>
 <div id="maindiv">   
     <page size="A4">
 
@@ -72,7 +76,7 @@ $rs_honor = $conn-> query($sql_honor);
         </div>
 
             <div class="image">  
-            <img src=<?php echo $image?> alt="" style="width:200px;height:200px;float:right;">
+            <img src=<?php echo $image?> alt="" style="width:200px;height:200px;float:right;border-radius: 50%;">
             
             </div>
 
@@ -85,10 +89,10 @@ $rs_honor = $conn-> query($sql_honor);
 
                 <div class="contact">
                     <div  >
-                    <p id="cont"><i style="font-size:20px; margin-left: 2px;" class="fa">&#xf095; </i> <?php echo $number ?></p>
-                <p id="cont"><i style="font-size:20px" class="fa">&#xf0e0; </i> <?php echo $email ?> </p>
-                <p ><i style="font-size:20px" >&#xf0e0; </i> <?php echo $address ?> </p>
-                        </p>
+                <?php echo $number ?><br>
+                 <?php echo $email ?> <br>
+                <?php echo $address ?> <br>
+                        
                     
                 </div>
 
@@ -136,7 +140,7 @@ $rs_honor = $conn-> query($sql_honor);
                         <h3><?php echo $data['exdesignation'] ; ?></h3>
                         <p>  <?php echo $data['excompany'] ; ?> </p>
                         <p class="time"> <?php echo $data['exstart']?>- <?php echo $data['exend'] ; ?></p>
-                        <p class="time"> <?php echo $data['description'] ; ?></p>
+                        <p style="line-height:4x;"> <?php echo $data['description'] ; ?></p><br>
                     <?php
                         }?>
                     </div>
@@ -156,6 +160,9 @@ $rs_honor = $conn-> query($sql_honor);
         </div>
     </page>
 </div>
+<div><?php
+            include("template_footer.php");
+            ?></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
