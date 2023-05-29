@@ -9,15 +9,16 @@
 </head>
 <style>
     #log {
+        color: rgb(17, 44, 149);
         float: right;
         margin-right: 30px;
         margin-top: 40px;
+        text-decoration: none;
     }
 </style>
 
 <body>
-    <a href="index.php" id='log' style="font-size:27px" class="fa">&#xf011;</a>
-
+    <a href="index.php" id='log' style="font-size:35px" class="fa">&#xf011;</a>
 </body>
 
 </html>

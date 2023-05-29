@@ -57,8 +57,8 @@
                 <a href="index.php">
                     <li>Home</li>
                 </a>
-                <li>FAQ</li>
-                <li>About</li>
+                <a href="faq.php"><li>FAQ</li></a>
+                <a href="about.php"><li>About</li></a>
             </ul>
         </nav>
     </div>

@@ -160,9 +160,12 @@ $rs_honor = $conn-> query($sql_honor);
         </div>
     </page>
 </div>
-<div><?php
-            include("template_footer.php");
-            ?></div>
+<div>
+<?php
+    include("footer_about.php");
+    ?>
+</div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     

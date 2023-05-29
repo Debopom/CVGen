@@ -16,10 +16,11 @@
 
     
         <h1 style="margin-left: 40%;">Please select a template </h1>
-        <a href="template1.php"><img id= "template_im" src="template_images\Pictorial-CV-template.jpg" alt=""></a>
+        <a href="template4.php"><img id= "template_im" src="template_images\template-4.png" alt=""></a>
         <a href="template2.php"><img id= "template_im" src="template_images\image.png" alt=""></a>
         <a href="template3.php"><img id= "template_im" src="template_images\template_ss.JPG" alt=""></a>
-        <a href="template4.php"><img id= "template_im" src="template_images\template-4.png" alt=""></a>
+        <a href="template1.php"><img id= "template_im" src="template_images\Pictorial-CV-template.jpg" alt=""></a>
+        
     </div>
     <?php include 'footer_about.php'; ?>
 </body>

@@ -6,9 +6,7 @@ $user_id= $_SESSION['id'];
 // image file 
 $imsg = "";
 
-if (!empty($_SESSION["user_id"])) {
-    header("Location: form.php");
-}
+
 
 if (isset($_POST['Next'])) {
     

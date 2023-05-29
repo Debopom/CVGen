@@ -40,8 +40,9 @@ $image = $row['file'];
             <h1>Personal Details</h1>
             <form action="form_data_update.php" method="post" enctype="multipart/form-data">
                 <div class="img-div">
-                    <img src=<?php echo $image ?> id="img1">
-                    <input type="file" id="file" name="file" value="<?php echo $file ?>">
+                    <img src='<?php echo $image ?>' id="img1">
+                    <input type="hidden" name="image" value="<?php echo $image ?>">
+                    <input type="file" id="file" name="file">
                     <label for="file" id="uploadBtn">Choose Photo</label>
                 </div>
                 <label for="fname" class="textdesign">First Name*</label>

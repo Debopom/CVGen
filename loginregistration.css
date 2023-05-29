@@ -1,21 +1,21 @@
 #login {
     height: fit-content;
     width: 700px;
-    background: linear-gradient(to top, rgba(192, 192, 192, 0.9)50%, rgba(192, 192, 192, 0.9)50%);
+    background: linear-gradient(to top, rgba(65, 211, 218, 0.9)50%, rgba(65, 211, 218, 0.9)50%);
     border-radius: 20px;
     margin: auto;
     margin-top: 50px;
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 #registration {
     height: fit-content;
     width: 700px;
-    background: linear-gradient(to top, rgba(192, 192, 192, 0.9)50%, rgba(192, 192, 192, 0.9)50%);
+    background: linear-gradient(to top, rgba(65, 211, 218, 0.9)50%, rgba(65, 211, 218, 0.9)50%);
     border-radius: 20px;
     margin: auto;
     margin-top: 8px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 #logintable {
@@ -30,7 +30,7 @@ input {
 }
 
 button {
-    background-color: rgb(1, 255, 175);
+    background-color: rgb(210, 254, 255);
     color: rgb(10, 10, 10);
     border-style: solid;
     border-color: black;
@@ -44,11 +44,6 @@ button {
 th {
     font-weight: bold;
 }
-
-/* #loginheader{
-    margin-left: 320px;
-    padding-top: 50px;
-} */
 
 #logindiv {
     height: 60px;

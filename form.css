@@ -1,12 +1,9 @@
 #div1 {
   height: fit-content;
   width: 900px;
-  /* background-color: rgb(192, 192, 192); */
-  background: linear-gradient(to top, rgba(192, 192, 192, 0.9)50%, rgba(192, 192, 192, 0.9)50%);
+  background: linear-gradient(to top, rgba(65, 211, 218, 0.9)50%, rgba(65, 211, 218, 0.9)50%);
   margin-top: 4%;
-  /**/
   margin-left: 25%;
-  /**/
   border-radius: 10px;
 }
 
@@ -116,7 +113,7 @@ h1 {
 }
 
 #submit {
-  background-color: rgb(1, 255, 175);
+  background-color: rgb(210, 254, 255);
   color: rgb(10, 10, 10);
   border-style: solid;
   border-color: black;

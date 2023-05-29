@@ -27,17 +27,20 @@ $form_query_rs = $conn->query($form_query);
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="background.css">
-  <link rel="stylesheet" href="dashboard.css">
   <link rel="stylesheet" href="homestyle.css">
   <link rel="stylesheet" href="navbar_logo.css">
+  <link rel="stylesheet" href="dashboard.css">
 
   <title>Dashboard</title>
-
+  <style>
+   body{
+    background-repeat: no-repeat;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container">
-  <?php include 'back.php'; ?>
     <div class="logo">
       <h1 class="logo2">CVGen</h1>
     </div>
@@ -48,7 +51,7 @@ $form_query_rs = $conn->query($form_query);
         <h2 style="font-weight: bold; font-size: 20px; text-align: left;">
           <?php echo $fname;
           echo " ";
-          echo $lname; ?> <br>
+          echo $lname;?> <br>
           <?php echo $email; ?></h2>
       </div>
     </div>
@@ -58,48 +61,40 @@ $form_query_rs = $conn->query($form_query);
         <a href="index.php">
           <li>Home</li>
         </a>
-        <a href="faq.php"><li>FAQ</li></a>
-        <a href="about.php"><li>About</li></a>
+        <li>FAQ</li>
+        <li>About</li>
       </ul>
     </nav>
     <?php include 'logout.php'; ?>
-
   </div>
 
 
   <div class="newcv">
     <?php
     if (mysqli_num_rows($form_query_rs) > 0) { ?>
+      
+       
+          <h1 id="hh">You already have created a form. Click here to edit</h1>
 
-      <div id="update">
-        <h1 id="hh">You already have created a form. Click here to edit</h1>
-        <a href="form_edit.php"><button id="bt"> Edit </button></a>
-        <br><br>
-        <h1 id="or">OR</h1>
-        <br><br>
-
-        <a href="delete_cv.php"><button id="bt" onclick="validation()" style="background-color: red"> Delete CV </button></a>
-      </div>
-
-      <img src="images/12_prev_ui.png" alt="picture" width="600px">
+          
+       
+          <a href="form_edit.php"><button id="bt"> Edit </button></a>
+          <br><br><h1 id = "or">OR</h1>
+          <br><br>
+ 
+        <a href="delete_cv.php"><button id="bt" onclick= "validation()"style = "background-color: red"> Delete CV </button></a>
     <?php } else { ?>
-      <div id="createcvnow">
-        <h1 id="hh">New in this site? </h1>
-        <a href="form.php"><button id="bt"> Create your CV now </button></a>
-      </div>
-
-      <div id="sidepic">
-        <img src="images/12_prev_ui.png" alt="picture" width="600px">
-      </div>
-
+      
+            <h1 id="hh">New in this site? </h1>
+           <a href="form.php"><button id="bt"> Create your CV now </button></a>
     <?php } ?>
   </div>
   <?php include 'footer.php'; ?>
 </body>
-<script>
-  function validation() {
-    alert("Are you sure you want to delete the previous CV? You will have to do it again from scratch!");
-  }
-</script>
+  <script>
+    function validation(){
+      alert("Are you sure you want to delete the previous CV? You will have to do it again from scratch!");
+    }
+  </script>
 
 </html>

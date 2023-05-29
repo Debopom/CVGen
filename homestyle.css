@@ -9,7 +9,7 @@
 
 .cv {
     /* background-color: var(--light-blue); */
-    background: linear-gradient(to top, rgba(65, 211, 218, 0.729)50%, rgba(65, 211, 218, 0.729)50%);
+    background: linear-gradient(to top, rgba(65, 211, 218, 0.9)50%, rgba(65, 211, 218, 0.9)50%);
     height: 540px;
     width: 630px;
     margin-top: 80px;
@@ -36,8 +36,7 @@
 }
 
 .btn {
-    /* background-color: rgb(1, 255, 175);  */
-    background: linear-gradient(to top, rgba(192, 192, 192, 0.9)50%, rgba(192, 192, 192, 0.9)50%);
+    background-color: rgb(210, 254, 255);
     color: rgb(0, 0, 0);
     height: 80px;
     width: 450px;
@@ -49,8 +48,7 @@
 }
 
 .btn-2 {
-    /* background-color: rgb(47, 227, 170); */
-    background: linear-gradient(to top, rgba(192, 192, 192, 0.9)50%, rgba(192, 192, 192, 0.9)50%);
+    background-color: rgb(157, 236, 237);
     color: rgb(0, 0, 0); 
     height: 70px;
     width: 200px;
