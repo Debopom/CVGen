@@ -1,0 +1,92 @@
+:root {
+    --light-blue: rgb(172, 221, 248);
+    --teal: rgba(65, 211, 218, 0.729); 
+    --light-green: #153d26;
+    --button: rgb(172, 221, 248);
+    --button2: rgba(65, 211, 218, 0.729);
+    --blue_: rgb(8, 8, 123);
+}
+
+.cv {
+    /* background-color: var(--light-blue); */
+    background: linear-gradient(to top, rgba(65, 211, 218, 0.9)50%, rgba(65, 211, 218, 0.9)50%);
+    height: 540px;
+    width: 630px;
+    margin-top: 80px;
+    margin-right: 90px;
+    float: right;
+    border: 1px;
+    border-radius: 35px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.5);
+}
+
+.imag {
+    margin-left: 100px;
+    margin-top: 20px;
+    height: 300px;
+}
+
+.buttons {
+    margin-top: 300px;
+    margin-left: 160px;
+    height: 200px;
+    margin-bottom: auto;
+    width: 520px;
+    float: left;
+}
+
+.btn {
+    background-color: rgb(210, 254, 255);
+    color: rgb(0, 0, 0);
+    height: 80px;
+    width: 450px;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+}
+
+.btn-2 {
+    background-color: rgb(157, 236, 237);
+    color: rgb(0, 0, 0); 
+    height: 70px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 22px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 120px;
+    margin-top: 14px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.3);
+}
+
+h2 {
+    color: rgb(4, 4, 120);
+    font-size: 33px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+p {
+    color: rgb(88, 88, 88);
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+h1.logo2 {
+    font-size: 40px;
+    margin-top: 20px;
+    padding-left: 30px;
+    font-weight: bold;
+    padding-top: 5px;
+    color: rgb(17, 44, 149);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0 5px 10px rgb(0 0 0 / 0.3);
+}
+
+#color{
+    color: black;
+}

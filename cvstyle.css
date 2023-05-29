@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(75, 72, 72);
+}
+
+#maindiv{
+    height: 100%;
+    width: 800px;
+    
+    background-color: white;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+
+}
+
+#leftdiv{
+    height: 100%;
+    width: 28%;
+    background-color: silver;
+    padding-left: 10px;
+    
+
+}
+
+#picdiv{
+    height: 30%;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#myimage{
+    height: 200px;
+    width:200px;
+}
+
+#rightdiv{
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    padding-left: 10px;
+}
+
+#nameprofessionaltitlediv{
+    height: 120px;
+    background-color: rgb(85, 85, 188);
+    margin-top: 70px;
+    padding-top: 30px;
+    text-align: center;
+    color: aliceblue;
+}
+
+#nameprodiv{
+    width:60% ;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.aboutmeworkexperience{
+    
+    text-align: justify;
+}
+
+#pdfButton{
+    background-color: rgb(210, 254, 255);
+    border: none;
+    color: rgb(10, 10, 10);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid black;
+}

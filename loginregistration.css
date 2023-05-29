@@ -1,0 +1,66 @@
+#login {
+    height: fit-content;
+    width: 700px;
+    background: linear-gradient(to top, rgba(65, 211, 218, 0.9)50%, rgba(65, 211, 218, 0.9)50%);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+#registration {
+    height: fit-content;
+    width: 700px;
+    background: linear-gradient(to top, rgba(65, 211, 218, 0.9)50%, rgba(65, 211, 218, 0.9)50%);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 8px;
+    padding-top: 20px;
+}
+
+#logintable {
+    margin: auto;
+    padding-top: 5px;
+}
+
+input {
+    height: 30px;
+    border-radius: 4px;
+    width: 400px;
+}
+
+button {
+    background-color: rgb(210, 254, 255);
+    color: rgb(10, 10, 10);
+    border-style: solid;
+    border-color: black;
+    width: 200px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+th {
+    font-weight: bold;
+}
+
+#logindiv {
+    height: 60px;
+    text-align: center;
+    border: 3px solid black;
+    width: 200px;
+    margin: auto;
+    padding-top: 0%;
+}
+
+#regdiv {
+    height: 60px;
+    text-align: center;
+    border: 3px solid black;
+    width: 250px;
+    margin: auto;
+    padding-top: 0%;
+
+}
+
